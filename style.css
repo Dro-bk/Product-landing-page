@@ -1,0 +1,190 @@
+body {
+  font-family: "Lucida Console", Monaco, monospace;
+  background-image: linear-gradient(
+    to bottom,
+    #e0f8f5,
+    #c4ecef,
+    #a9dfed,
+    #93d0ec,
+    #86c0ec,
+    #7db2e6,
+    #77a4de,
+    #7495d6,
+    #6787c9,
+    #5a7abc,
+    #4e6cb0,
+    #415fa3
+  );
+}
+#header {
+  opacity: 0.9;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  min-height: 9em;
+  background-image: url(https://c2.staticflickr.com/8/7824/45673364725_967467d45b_h_d.jpg);
+  background-repeat: repeat-x;
+  animation: animatedBackground 20s linear infinite;
+}
+.logo-container {
+  padding: 15px;
+  width: 30px;
+}
+#header-img {
+  opacity: 1;
+  height: 100px;
+}
+.main-title {
+  margin-top: 200px;
+  margin-bottom: 5%;
+}
+#nav-bar {
+  font-size: 1.5vw;
+  text-align: right;
+  width: 100%;
+}
+.nav-menu {
+  padding: 15px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  display: inline;
+  margin: 1em;
+}
+.nav-menu:hover {
+  border: 5px solid #fff;
+}
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 1px 1px #000000;
+}
+h1 {
+  text-align: center;
+}
+.description {
+  text-align: center;
+}
+.features-box {
+  padding: 0 15%;
+  display: flex;
+  width: 60%;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.feat-title {
+  font-size: 1.5em;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+.form-container {
+  margin: 5%;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.plans {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.plan-box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #cae1ff;
+  text-align: left;
+  width: 30%;
+  margin: auto;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: all .2s ease-in-out; 
+}
+.plan-box:hover{
+  transform: scale(1.1);
+}
+.plan-title {
+  background-color: #cae1ff;
+  font-size: 18px;
+  text-align: center;
+}
+.plan-price {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10%;
+  margin-bottom: 2%;
+}
+.plan-price:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+li {
+  margin: 25px;
+}
+.button {
+  font-size: 18px;
+}
+.email-label {
+  font-size: 18px;
+}
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+footer{
+  text-align: center;
+  font-size: 12px;
+  border-top: 1px solid lightgrey;
+}
+/* mobile screen */
+  @media (max-width: 650px) {
+  #header {
+    justify-content: space-around;
+     animation: animatedBackground 80s linear infinite;
+  }
+ #nav-bar ul {
+    display: flex;
+    font-size: 2.5vw;
+    }
+}
+    @media (max-width: 336px) {
+  .features-box {
+    flex-wrap: wrap;
+  }
+}
+    @media (max-width: 450px) {
+  .nav-menu {
+    padding: 5px;
+  }
+}
+    @media (max-width: 880px) {
+  .plan-box {
+    margin-bottom: 25px;
+    width: 80%;
+  }
+}
+@media (max-width: 1100px) {
+  #header{
+    animation: animatedBackground 60s linear infinite;}
+}
